@@ -1,5 +1,3 @@
-<h2 id="title">Welcome to Ember.js</h2>
-
 {{outlet}}
 
 {{#mdl-button}} Default {{/mdl-button}}
@@ -16,3 +14,24 @@
 {{mdl-button mod="fab colored" icon="add"}}
 <br>
 {{mdl-button mod="fab colored" disabled=true icon="face"}}
+<br>
+<br>
+{{#mdl-button mod="raised"}} Raised {{/mdl-button}}
+<br>
+{{#mdl-button ripple=true js=true mod="raised"}} Raised ripple {{/mdl-button}}
+<br>
+{{#mdl-button ripple=true disabled=true mod="raised"}} Raised disabled {{/mdl-button}}
+<br><br>
+{{#mdl-button ripple=true js=true mod="raised accent"}} Raised accent {{/mdl-button}}
+<br>
+{{#mdl-button mod="primary"}} Primary {{/mdl-button}}
+{{#mdl-button mod="accent"}} Accent {{/mdl-button}}
+<br><br>
+{{mdl-button mod="icon" icon="face"}}
+{{mdl-button mod="icon colored" icon="mood"}}
+<br><br>
+{{mdl-button mod="fab mini-fab colored" icon="add"}}
+<br>
+{{#mdl-button mod="raised colored" color="red"}} Colored red {{/mdl-button}}
+{{#mdl-button mod="raised colored" color="red-300"}} Colored red 300 {{/mdl-button}}
+{{#mdl-button mod="raised colored" color="light-blue"}} Colored light blue {{/mdl-button}}

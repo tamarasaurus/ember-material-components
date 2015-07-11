@@ -1,8 +1,9 @@
 import Ember from "ember";
 import layout from "../templates/components/mdl-button";
 import Bem from "../mixins/bem-modifiers";
+import Color from "../mixins/color";
 
-export default Ember.Component.extend(Bem, {
+export default Ember.Component.extend(Bem, Color, {
   layout: layout,
   tagName: "button",
   classNames: ["mdl-button"],
