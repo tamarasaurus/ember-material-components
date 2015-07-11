@@ -1,0 +1,1 @@
+export { default } from 'ember-material-components/components/material-icon';

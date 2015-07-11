@@ -1,3 +1,18 @@
 <h2 id="title">Welcome to Ember.js</h2>
 
 {{outlet}}
+
+{{#mdl-button}} Default {{/mdl-button}}
+<br>
+{{#mdl-button js=true iconClass=""}} Default JS{{/mdl-button}}
+<br>
+{{#mdl-button mod="colored"}} Colored {{/mdl-button}}
+<br>
+{{!-- Circular with icon --}}
+{{#mdl-button mod="fab"}} . {{/mdl-button}}
+<br>
+{{#mdl-button js=true ripple=true}} Ripple JS {{/mdl-button}}
+<br>
+{{mdl-button mod="fab colored" icon="add"}}
+<br>
+{{mdl-button mod="fab colored" disabled=true icon="face"}}
