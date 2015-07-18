@@ -15,5 +15,6 @@ module.exports = function(defaults) {
 
   app.import("bower_components/material-design-lite/material.min.js");
   app.import("bower_components/material-design-lite/material.css");
+  app.import("bower_components/highlightjs/styles/github.css");
   return app.toTree();
 };

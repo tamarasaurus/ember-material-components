@@ -1,37 +1,91 @@
 {{outlet}}
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
+            mdl-layout--overlay-drawer-button">
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Catalogue</span>
+    <nav class="mdl-navigation">
+      {{!-- Link to --}}
+      <a class="mdl-navigation__link" href="">Buttons</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="page-content demo-content">
 
-{{#mdl-button}} Default {{/mdl-button}}
-<br>
-{{#mdl-button js=true iconClass=""}} Default JS{{/mdl-button}}
-<br>
-{{#mdl-button mod="colored"}} Colored {{/mdl-button}}
-<br>
-{{!-- Circular with icon --}}
-{{#mdl-button mod="fab"}} . {{/mdl-button}}
-<br>
-{{#mdl-button js=true ripple=true}} Ripple JS {{/mdl-button}}
-<br>
-{{mdl-button mod="fab colored" icon="add"}}
-<br>
-{{mdl-button mod="fab colored" disabled=true icon="face"}}
-<br>
-<br>
-{{#mdl-button mod="raised"}} Raised {{/mdl-button}}
-<br>
-{{#mdl-button ripple=true js=true mod="raised"}} Raised ripple {{/mdl-button}}
-<br>
-{{#mdl-button ripple=true disabled=true mod="raised"}} Raised disabled {{/mdl-button}}
-<br><br>
-{{#mdl-button ripple=true js=true mod="raised accent"}} Raised accent {{/mdl-button}}
-<br>
-{{#mdl-button mod="primary"}} Primary {{/mdl-button}}
-{{#mdl-button mod="accent"}} Accent {{/mdl-button}}
-<br><br>
-{{mdl-button mod="icon" icon="face"}}
-{{mdl-button mod="icon colored" icon="mood"}}
-<br><br>
-{{mdl-button mod="fab mini-fab colored" icon="add"}}
-<br>
-{{#mdl-button mod="raised colored" color="red"}} Colored red {{/mdl-button}}
-{{#mdl-button mod="raised colored" color="red-300"}} Colored red 300 {{/mdl-button}}
-{{#mdl-button mod="raised colored" color="light-blue"}} Colored light blue {{/mdl-button}}
+      {{mdl-type mod="title" label="Default button"}}
+      {{#mdl-button}} Default {{/mdl-button}}
+      <pre>\{{#mdl-button}} Default \{{/mdl-button}}</pre>
+      {{!-- @todo Fix code highlighting here..  --}}
+      {{!-- {{#code-block language="handlebars"}} \{{#mdl-button}} Default \{{/mdl-button}} {{/code-block}} --}}
+
+      {{mdl-type mod="title" label="Default with ripple"}}
+      {{#mdl-button js=true ripple=true}} Default JS {{/mdl-button}}
+      <pre>\{{#mdl-button js=true ripple=true}} Default JS \{{/mdl-button}}</pre>
+
+      {{mdl-type mod="title" label="Colored button"}}
+      {{#mdl-button mod="colored"}} Colored {{/mdl-button}}
+      <pre>\{{#mdl-button mod="colored"}} Colored \{{/mdl-button}}</pre>
+
+      {{mdl-type mod="title" label="Raised colored"}}
+      {{#mdl-button mod="raised colored"}} Colored {{/mdl-button}}
+      <pre>\{{#mdl-button mod="raised colored"}} Colored \{{/mdl-button}}</pre>
+
+      {{mdl-type mod="title" label="Fab colored"}}
+      {{mdl-button mod="fab colored" icon="add"}}
+      <pre>\{{mdl-button mod="fab colored" icon="add"}}</pre>
+
+      {{mdl-type mod="title" label="Fab colored disabled"}}
+      {{mdl-button mod="fab colored" disabled=true icon="face"}}
+      <pre>\{{mdl-button mod="fab colored" disabled=true icon="face"}}</pre>
+
+      {{mdl-type mod="title" label="Raised"}}
+      {{#mdl-button mod="raised"}} Raised {{/mdl-button}}
+      <pre>\{{#mdl-button mod="raised"}} Raised \{{/mdl-button}}</pre>
+
+      {{mdl-type mod="title" label="Raised ripple"}}
+      {{#mdl-button ripple=true js=true mod="raised"}} Raised ripple {{/mdl-button}}
+      <pre>\{{#mdl-button ripple=true js=true mod="raised"}} Raised ripple \{{/mdl-button}}</pre>
+
+      {{mdl-type mod="title" label="Raised disabled"}}
+      {{#mdl-button ripple=true disabled=true mod="raised"}} Raised disabled {{/mdl-button}}
+      <pre>\{{#mdl-button ripple=true disabled=true mod="raised"}} Raised disabled \{{/mdl-button}}</pre>
+
+      {{mdl-type mod="title" label="Raised accent"}}
+      {{#mdl-button ripple=true js=true mod="raised accent"}} Raised accent {{/mdl-button}}
+      <pre>\{{#mdl-button ripple=true js=true mod="raised accent"}} Raised accent \{{/mdl-button}}</pre>
+
+      {{mdl-type mod="title" label="Primary button"}}
+      {{#mdl-button mod="primary"}} Primary {{/mdl-button}}
+      <pre>\{{#mdl-button mod="primary"}} Primary \{{/mdl-button}}</pre>
+
+      {{mdl-type mod="title" label="Accent button"}}
+      {{#mdl-button mod="accent"}} Accent {{/mdl-button}}
+      <pre>\{{#mdl-button mod="accent"}} Accent \{{/mdl-button}}</pre>
+
+      {{mdl-type mod="title" label="Icon"}}
+      {{mdl-button mod="icon" icon="face"}}
+      <pre>\{{mdl-button mod="icon" icon="face"}}</pre>
+
+      {{mdl-type mod="title" label="Accent button"}}
+      {{mdl-button mod="icon colored" icon="mood"}}
+      <pre>\{{mdl-button mod="icon colored" icon="mood"}}</pre>
+
+      {{mdl-type mod="title" label="Mini fab colored raised"}}
+      {{mdl-button mod="fab mini-fab colored raised" icon="add"}}
+      <pre>\{{mdl-button mod="fab mini-fab colored raised" icon="add"}}</pre>
+
+      {{mdl-type mod="headline" label="Using colors"}}
+      <p>
+        To use a material design color just add the 'color' property - the value should match a named color from the material design stylesheet.
+      </p>
+
+      {{mdl-type mod="title" label="Colored buttons"}}
+      {{#mdl-button mod="raised colored" color="red"}} Colored red {{/mdl-button}}
+      <br><br>
+      {{#mdl-button mod="raised colored" color="red-300"}} Colored red 300 {{/mdl-button}}
+      <br><br>
+      {{#mdl-button mod="raised colored" color="light-blue"}} Colored light blue {{/mdl-button}}
+      <pre>\{{#mdl-button mod="raised colored" color="red"}} Colored button \{{/mdl-button}}</pre>
+    </div>
+  </main>
+</div>

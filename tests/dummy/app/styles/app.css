@@ -1,0 +1,17 @@
+body {
+  background-color: #eee;
+}
+pre {
+  background: #fff;
+  margin-bottom: 64px;
+  width: auto;
+  padding: 8px;
+  border-radius: 5px;
+  display: table;
+}
+.page-content {
+  padding: 16px;
+}
+.demo-content .mdl-typography {
+  margin-bottom: 16px;
+}
